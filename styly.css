@@ -1,0 +1,415 @@
+/* mobilní telefony */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+  }
+  .hlavicka h1{
+    grid-column: 1/6;
+    grid-row: 1;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .hamburger-menu span{
+    display: block;
+    height: 3.5px;
+    width: 27px;
+    background-color: var(--primarni);
+    border-radius: 5%;
+    margin: 5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+  }
+  .hamburger-menu{
+    cursor: pointer;
+    grid-column: 8/9;
+    grid-row: 1;
+    align-self: center;
+    justify-self: right;
+    margin-right: 20px;
+  }
+  .navigace{
+    grid-column: 1/9;
+    grid-row: 2;
+    height: 0;
+    transition: all ease-out 0.4s;
+  }
+  .navigace.open{
+    height: auto;
+    margin: 0 0 0.5em 0;
+  }
+  .navigace li{
+    background-color: var(--tercialni);
+    border-bottom: 1px solid var(--sekundarni);
+    padding: 10px 10px 10px 20px;
+  }
+  .navigace a{
+    display: block;
+    width: 100%;
+  }
+  .navigace a:active{
+    color: var(--doplnkova);
+  }
+  #banner {
+    position: relative;
+  }  
+  #banner-img img{
+    overflow: hidden;
+    width: 100%;
+    height: 37vh;
+    object-fit: cover;
+  }
+  #banner-logo{
+    display: none;
+  }
+  #oNas{
+    padding: 1.5em 1.2em;
+    background: var(--sekundarni);}
+  #oNas h3{
+    text-align: center;
+  }
+  #oNas p,
+  #poukazy p{
+    text-align: center;
+    margin: 0 20px;
+  }
+  .tlacitka{
+    text-align: center;
+    margin: 1.5em;
+  }
+  button{
+    background-color: var(--sekundarni);
+    color: var(--primarni);
+    border: 1px solid var(--primarni);
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 0.6em;
+    margin: 0.5em;
+    font-family: 'Barlow', sans-serif;
+  }
+  button:hover{
+    background-color: var(--primarni);
+    color: var(--sekundarni);
+  }
+  button:active{
+    transform: translateY(1px);
+  }
+  .obsah-okna img{
+    width: 80vw;
+    height: 60vh;
+  }
+  #poukazy{
+    background-color: rgba(0,0,0,0.2);
+    padding: 30px;
+  }
+  #poukazy h3{
+    text-align: center;
+  }
+  .druhyPoukazu{
+    margin: 20px 0;
+  }
+  .druhyPoukazu div{
+    grid-column: 1/9;
+    display: flex;
+    margin: 20px 0
+  }
+  .druhyPoukazu div *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+  }
+  .druhyPoukazu img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  }
+  .druhyPoukazu img:hover{
+    transform: scale(1.1);
+  }
+  .druhyPoukazu h4{
+    color: #FEF2CD;
+  }
+  #fotogalerie{
+    background-color: var(--tercialni);
+    padding: 10px 0 7px 0;
+  }
+  #fotogalerie div:nth-child(1){
+    display: none;
+  }
+  #fotogalerie div{
+    max-width: 50%;
+  }
+  #kontakt{
+    padding: 50px;
+    background: var(--sekundarni);
+  }
+  #kontakt h3{
+    padding-bottom: 1.5em;
+    text-align: center;
+  }
+  #kontakt div:first-child h4{
+    margin-top: 0;
+  }
+  #kontakt div{
+    grid-column: 2/8;
+    text-align: center;
+    align-items: center;
+  }
+  #kontakt div:last-child{
+    margin-bottom: 3em;
+  }
+  #kontakt table{
+    margin: 0 auto;
+    text-align: left;
+  }
+  .prvni-sloupec{
+    padding-right: 1em;
+  }
+  #google-map{
+    display: none;
+  }
+  footer{
+    padding: 30px 50px;
+    background-color: var(--tercialni);
+  }
+  footer .copyright{
+    grid-column: 1/4;
+    font-size: 0.8em;
+  }
+  footer .social{
+    grid-column: 7/9;
+    align-self: center;
+    justify-self: right;
+  }
+  footer li{
+    margin: 0 6px;
+  }
+    
+  /* menší tablety */
+  @media screen and (min-width: 620px){
+    #banner-img img{
+      width: 100%;
+      height: auto;
+    }
+    #banner-logo{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 30px;
+      animation: nacitani 3s forwards;
+    }
+    #banner-logo img{
+      width: 40%;
+      height: 40%;
+    }
+    #oNas, #poukazy{
+      padding: 40px 100px;
+    }
+    .obsah-okna img{
+      width: 68vw;
+      height: 80vh;
+    }
+    .druhyPoukazu{
+      margin-top: 40px;
+    }
+    .druhyPoukazu div{
+      grid-column: span 4;
+      display: block;
+      margin: 20px 0;
+    }
+    .druhyPoukazu a:last-child{
+      grid-column: 3/7;
+    }
+    .druhyPoukazu div *{
+      margin: 10px;
+      max-width: 60%;
+      margin: 10px 20%;
+    }
+    .druhyPoukazu h4{
+      text-align: center;
+    }
+    #fotogalerie div{
+      max-width: 33%;
+    }
+    #fotogalerie div:nth-child(1){
+      display: inline-block;
+    }
+    #kontakt div{
+      text-align: left;
+      grid-column: 1/5;
+    }
+    #kontakt table{
+      margin: 0;
+    }
+    #google-map{
+      display: inline;
+      grid-column: 6/9 !important;
+      grid-row: 1/4;
+    }
+    #google-map iframe{
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+    }
+  }
+    
+  /* větší tablety a notebooky */
+  @media screen and (min-width: 960px){
+    body{
+      font-size: 18px;
+    }
+    .grid{
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .popis{
+      margin: 20px 0;
+    }
+    .hlavicka{
+      padding: 0 20px;
+    }
+    .hlavicka h1{
+      grid-column: 1/4;
+    }
+    .hamburger-menu{
+      display: none;
+    }
+    .navigace, .navigace.open{
+      height: auto;
+      margin: 0;
+      display: flex;
+      grid-column: 4/9;
+      grid-row: 1;
+      justify-content: flex-end;
+      align-self: center;
+    }
+    .navigace li{
+      background-color: var(--sekundarni);
+      margin-left: 10px;
+      border-radius: 4px;
+      padding: 5px;
+    }
+    .navigace li:last-child{
+      margin-right: 10px;
+    }
+    .navigace li:hover{
+      background-color: var(--tercialni);
+    }
+    #oNas{
+      padding: 30px 20px;
+    }
+    #oNas p,
+    #poukazy p{
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: justify;
+    }
+    .obsah-okna img{
+      width: 60vw;
+      height: 82vh;
+    }
+    .druhyPoukazu div:nth-child(1){
+      grid-column: 2/4;
+    }
+    .druhyPoukazu div:nth-child(2){
+      grid-column: 4/6;
+      padding-top: 140px;
+    }
+    .druhyPoukazu div:nth-child(3){
+      grid-column: 6/8;
+    }
+    .druhyPoukazu div *{
+      max-width: 80%;
+      margin: 30px 10%;
+    }
+    #kontakt{
+      padding: 60px 100px;
+    }
+    #kontakt div:last-child{
+      margin-bottom: 4em;
+    }
+    #google-map iframe{
+      aspect-ratio: 4 / 3;
+    }
+    footer{
+      padding: 30px 100px;
+    }
+  }
+    
+  /* desktopové počítače */
+  @media screen and (min-width: 1200px){
+    body{
+      font-size: 20px;
+    }
+    .hlavicka{
+      padding: 0;
+    }
+    #banner-logo{
+      top: 40px;
+    }
+    #oNas, #poukazy{
+      padding: 50px 0;
+    }
+    .popis{
+      margin: 20;
+    }
+    #oNas p{
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    .obsah-okna img{
+      width: 37vw;
+      height: 82vh;
+    }
+    #poukazy p{
+      max-width: 800px;
+      margin: 40px auto;
+    }
+    .druhyPoukazu div:nth-child(1){
+      grid-column: 1/3;
+    }
+    .druhyPoukazu div:nth-child(2){
+      grid-column: 4/6;
+      padding-top: 140px;
+    }
+    .druhyPoukazu div:nth-child(3){
+      grid-column: 7/9;
+    }
+    .druhyPoukazu div *{
+      max-width: 100%;
+      margin: 30px 0%;
+    }
+    #fotogalerie img:hover{
+      transform: scale(1.01);
+    }
+    footer .copyright{
+      grid-column: 1/4;
+      align-self: center;
+    }
+    footer .social{
+      grid-column: 6/9;
+      align-self: center;
+    }
+}
+  
+/* animace hamburger menu */
+.hamburger-menu.open span:nth-child(2){
+    width: 0;
+    opacity: 0;
+}
+.hamburger-menu.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 8.7px;
+}
+.hamburger-menu.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: -8.7px;
+}
+  
+/* animace loga */
+@keyframes nacitani {
+    0% {opacity: 0; transform: translateX(5px);}
+    100%{opacity: 1;}
+}

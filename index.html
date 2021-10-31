@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zakladni.css">
+    <link rel="stylesheet" href="styly.css">
+    <link rel="stylesheet" href="vyskakovaci-okno.css">
+    <link rel="icon" type="image/png" href="obrazky/potraviny_logo_barevne.png" sizes="64x64">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200&display=swap');
+    </style>
+    <title>Hostinec Na Potravinách</title>
+</head>
+<body>
+    <nav class="hlavicka grid" id="homepage">
+      <h1><a href="#homepage">Hostinec Na Potravinách</a></h1>
+      <div class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navigace">
+        <li><a href="#oNas">O nás</a></li>
+        <li><a href="#poukazy">Dárkové poukazy</a></li>
+        <li><a href="#fotogalerie">Fotogalerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <section id="banner">
+      <div id="banner-img">
+        <img src="obrazky/sezeni_s.jpeg" alt="Hostinec Na Potravinách">
+      <div id="banner-logo">
+        <img src="obrazky/potraviny_logo.png" alt="logo">
+      </div>
+    </section>
+    <section id="oNas">
+      <h3>O nás</h3>
+      <p class="popis">Vítejte na stránkách plzeňského Hostince Na Potravinách, který je pro Vás otevřen každý den <strong>od 14 do 24 hodin</strong>, v neděli pak <strong>od 14 do 22 hodin</strong>.
+        <br><br>Nabízíme pět druhů točeného piva, točenou Kofolu, točenou limonádu a další alkoholické i nealkoholické nápoje. Vaříme několik teplých jídel denně a množství menších pochoutek k pivu. Nápojový lístek a jídelní lístek si můžete prohlédnout níže.
+        <br><br>Kromě vnitřních prostor se u nás můžete posadit i venku, kde je k dispozici kryté sezení, dětské hřiště a hřiště na petanque. K dispozici jsou také dva vnitřní salonky pro 20 a 30 osob, které je možné pronajmout na soukromé akce.
+        <br><br>Pro rezervaci stolu či salonku volejte na telefonní číslo +420 773 910 181.
+      </p>
+      <div class="tlacitka">
+        <button id="napojovy-listek">Nápojový lístek</button>
+        <button id="jidelni-listek">Jídelní lístek</button>
+      </div>
+      <div class="vyskakovaci-okno-wrapper">
+        <div class="vyskakovaci-okno">
+          <div class="zavrit-okno">x</div>
+          <div class="obsah-okna">
+            <img src="obrazky/jidelni-listek.JPG" alt="jidelní lístek" id="jidelni-listek-img" loading="lazy">
+            <img src="obrazky/napojovy-listek.JPG" alt="nápojový lístek" id="napojovy-listek-img" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="poukazy">
+      <h3>Dárkové poukazy</h3>
+      <p class="popis">Nově nabízíme i dárkové poukazy ve třech různých hodnotách. Dárkové poukazy si můžete vyzvednout přímo v Hostinci kdykoliv během otevírací doby.</p>
+      <div class="druhyPoukazu grid">
+        <div>
+          <img src="obrazky/Poukaz_200.JPG" alt="Poukaz na dvěstě korun">
+          <h4>Poukaz na 200 Kč</h4>
+        </div>
+        <div>
+          <img src="obrazky/Poukaz_500.JPG" alt="Poukaz na pětset korun">
+          <h4>Poukaz na 500 Kč</h4>
+        </div>
+        <div>
+          <img src="obrazky/Poukaz_1000.PNG" alt="Poukaz na tisíc korun">
+          <h4>Poukaz na 1000 Kč</h4>
+        </div>
+      </div>
+    </section>
+    <section id="fotogalerie">
+      <div>
+        <img src="obrazky/sezeni.jpeg" alt="Hostinec Na Potravinách - venkovní sezení" loading="lazy">
+      </div>
+      <div>
+        <img src="obrazky/gulas.jpg" alt="Hostinec Na Potravinách - guláš" loading="lazy">
+      </div>
+      <div>
+        <img src="obrazky/skluzavka.jpg" alt="Hostinec Na Potravinách - skluzavka" loading="lazy">
+      </div>
+    </div>
+    </section>
+    <section id="kontakt">
+      <h3>Kontakt</h3>
+      <div class="grid">
+        <div>
+          <h4>Otevírací doba</h4>
+          <table>
+            <tr>
+              <td class="prvni-sloupec">PO - SO</td>
+              <td>14:00 - 24:00</td>
+            </tr>
+            <tr>
+              <td class="prvni-sloupec">NE</td>
+              <td>14:00 - 22:00</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h4>Telefonní číslo (info, rezervace)</h4>
+          <p>+420 773 910 181</p>
+        </div>
+        <div>
+          <h4>Adresa</h4>
+          <p>Radčická 2394/4</p>
+          <p>301 00  Plzeň 3</p>
+        </div>
+        <div id="google-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.8961382068683!2d13.367353699999997!3d49.750398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470af1f78486a9f3%3A0x3bf63738e2a9811!2zUmFkxI1pY2vDoSAyMzk0LzQsIDMwMSAwMCBQbHplxYggMy1KacW-bsOtIFDFmWVkbcSbc3TDrQ!5e0!3m2!1scs!2scz!4v1632473856084!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="grid">
+        <p class="copyright">Copyright  ©2021 Hostinec Na Potravinách</p>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/napotravinach/?ref=page_internal" target="_blank"><img src="obrazky/facebook-icon.jpg" alt="facebook"></a></li>
+        </ul>
+      </div>
+    </footer>  
+  
+    <script src="script.js"></script>
+    
+</body>
+</html>

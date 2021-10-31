@@ -1,0 +1,86 @@
+/* border-box */
+html {
+    box-sizing: border-box;
+}
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+/* proměnné */
+:root{
+    --primarni: #FEF2CD;
+    --sekundarni: #023b04;
+    --tercialni: rgba(1, 30, 2, 0.8);
+    --doplnkova: #f8f4e8;
+}
+
+/* reset */
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* základní styly */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--sekundarni);
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+#fotogalerie{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#fotogalerie img{
+    width: 100%;
+}
+footer img{
+    width: 1.4em;
+    height: 1.4em;
+}
+
+/* fonty */
+h1,h2,h3,h4{
+    color: var(--doplnkova);
+    font-weight: normal;
+    line-height: 1.2em;
+}
+p,li,a,table{
+    color: var(--primarni);
+    line-height: 1.4em;
+    font-size: 1em;
+}
+h1{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.1em;
+}
+.popis{
+    font-size: 1em;
+}
+button{
+    font-size: 0.8em;
+}
+#kontakt h4{
+    color: #BEAC74;
+    margin: 30px 0 15px 0;
+    font-weight: bolder;
+}
