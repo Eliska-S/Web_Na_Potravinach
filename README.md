@@ -1,1 +1,1 @@
-# Web_Na_Potravinach
+# Webová stránka plzeňského Hostince Na Potravinách
