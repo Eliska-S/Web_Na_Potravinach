@@ -1,11 +1,13 @@
+/* Rozevírací menu */
 let menu = document.querySelector('.hamburger-menu');
 let navigace = document.querySelector('.navigace');
 
 menu.addEventListener ('click', () => {
     menu.classList.toggle('open');
-    navigace.classList.toggle("open");
+    navigace.classList.toggle('open');
 });
 
+/* Vyskakovací okno */
 let tlacitkoJidelniListek = document.querySelector('#jidelni-listek');
 let tlacitkoNapojovyListek = document.querySelector('#napojovy-listek');
 let vyskakovaciOkno = document.querySelector('.vyskakovaci-okno-wrapper');
@@ -26,6 +28,6 @@ tlacitkoNapojovyListek.addEventListener('click', () => {
 
 krizek.addEventListener('click', () => {
     vyskakovaciOkno.style.display = 'none';
-    napojovyListek.style.display = 'none';
     jidelniListek.style.display = 'none';
+    napojovyListek.style.display = 'none';
 })
