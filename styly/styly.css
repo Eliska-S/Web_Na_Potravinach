@@ -68,6 +68,7 @@
     background: var(--sekundarni);}
   #oNas h3{
     text-align: center;
+    margin-top: 0.9em;
   }
   #oNas p,
   #poukazy p{
@@ -84,13 +85,14 @@
     border: 1px solid var(--primarni);
     border-radius: 2px;
     cursor: pointer;
-    padding: 0.6em;
+    padding: 0.6em 0.6em 0.7em 0.6em;
     margin: 0.5em;
     font-family: 'Barlow', sans-serif;
   }
   button:hover{
     background-color: var(--primarni);
     color: var(--sekundarni);
+    font-weight: 700;
   }
   button:active{
     transform: translateY(1px);
