@@ -85,10 +85,10 @@
     border: 1px solid var(--primarni);
     border-radius: 2px;
     cursor: pointer;
-    padding: 0.6em 0.6em 0.7em 0.6em;
-    margin: 0.7em;
+    padding: 0.7em 0.7em 0.8em 0.7em;
+    margin: 0.8em;
     font-family: 'Barlow', sans-serif;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     font-weight: 500;
   }
   button:hover{
@@ -128,7 +128,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   }
   .druhyPoukazu img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
   .druhyPoukazu h4{
     color: #FEF2CD;
